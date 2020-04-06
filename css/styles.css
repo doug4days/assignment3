@@ -15,26 +15,28 @@ h2 {
     color: rgb(244, 117, 0);
     font-family: cursive;
 }
+
 h1,
-        h2 {
-            color: rgb(0, 88, 255, 0.59);
-            font-family: cursive;
-            background-color:coral;
-        }
+h2 {
+    color: rgb(0, 88, 255, 0.59);
+    font-family: cursive;
+    background-color: coral;
+}
+
 body {
-    
-/*    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5 )), url("../images/aaa.jpg");*/
-    
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)),url("../images/aaa.jpg");
-    
-    
-    
+
+    /*    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5 )), url("../images/aaa.jpg");*/
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url("../images/aaa.jpg");
+
+
+
     background size: cover;
     background-position: center;
     min-height: 100vh;
-    
-    
-    
+
+
+
 }
 
 
@@ -43,16 +45,16 @@ body {
 
 
 
-main{
+main {
     background-color: lavenderblush
 }
 
 
 
 #spaghettistyle {
-    
-    font-size: 2.5em; 
-    
+
+    font-size: 2.5em;
+
     border: 7px solid orange;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -63,19 +65,34 @@ main{
 
 
 .spaghettistyle {
-    
-    font-size: 2.5em; 
-    
+
+    font-size: 3.5em;
+
     border: 5px solid orange;
     padding: 15px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
- img:hover {
+
+.secondarystyle {
+
+    font-size: 2.5em;
+
+    font-family: sans-serif
+}
+
+.menu {
+
+    font-size: 1.5em;
+}
+
+
+
+img:hover {
     opacity: 1;
     transform: scale(1.05);
-    
+
 }
 
 
@@ -87,20 +104,22 @@ main{
 
 
 
-h1, h2 {
-    color:ghostwhite;
+h1,
+h2 {
+    color: ghostwhite;
     font-size: 25px
 }
 
-ul, ol {
-    color:darkslateblue
+ul,
+ol {
+    color: darkslateblue
 }
 
-#special{
+#special {
     font-family: sans-serif
 }
 
-.pics{
+.pics {
     background-color: orange;
     display: flex;
     flex-wrap: wrap;
@@ -109,27 +128,66 @@ ul, ol {
     margin: 0px 20px 20px 20px;
 }
 
+.container {
+
+
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    width: 50vw;
+    padding: .5em;
+    display: flex;
+
+}
+
+.item {
+
+    margin: 0.5em;
+    width: 100%;
+    background-color: whitesmoke;
+
+}
+
+
+.container2 {
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    width: 50vw;
+    padding: .5em;
+    display: flex;
+
+
+}
+
+@media screen and (max-width: 60rem) {
+    .container2 {
+        flex-direction: column;
+    }
+}
+
 nav a {
     font-family: monospace
 }
 
 a:hover {
-    color:orange
+    color: orange
 }
+
 
 
 
 
 
 @media screen and (max-width: 50rem) {
-    
- header,
+
+    header,
     main,
-    footer   {
+    footer {
         flex-direction: column;
     }
-    
-    
+
+
 }
 
 header nav ul {
